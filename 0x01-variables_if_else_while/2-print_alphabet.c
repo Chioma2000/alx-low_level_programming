@@ -1,16 +1,16 @@
 #include <stdio.h>
 
 /**
-* main - Entry point
+* main - a to z
 *
-* Return: Always 0 (Success)
+* Return: 0 as always
 */
 int main(void)
 {
 	char c;
 
-	for (c = 'a'; c <= 'z'; c++)
-		putchar(c);
+	for (ch = 'a'; ch <= 'z'; ch++)
+		putchar(ch);
 		putchar('\n');
 	return (0);
 }
