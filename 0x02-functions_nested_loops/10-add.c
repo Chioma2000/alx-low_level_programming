@@ -2,9 +2,9 @@
 #include <stdio.h>
 
 /**
-* add - Adds two integers and return 
+* add - Adds two integers and return
 * the result.
-* 
+*
 * @a: number one.
 *
 * @b: number two.
