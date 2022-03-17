@@ -1,14 +1,14 @@
 #include "main.h"
 
 /**
-* print_times_table - print times table
-* @n: times table to use
+* print_times_table - prints times table
 *
-* Return:void.
+* @n : times table to use
+*
+* Return:void
 */
 void print_times_table(int n)
 {
-
 	int a = 0, rep, b;
 
 	if (n < 0 || n > 15)
@@ -16,7 +16,6 @@ void print_times_table(int n)
 
 	while (a <= n)
 	{
-
 		for (b = 0; b <= n; b++)
 		{
 			rep = a * b;
