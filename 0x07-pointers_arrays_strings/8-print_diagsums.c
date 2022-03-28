@@ -1,21 +1,28 @@
 #include "main.h"
+#include <stdio.h>
 /**
- * print_chessboard - prints the chessboard
- * @a: input pointer.
- * Return: no return.
+ * print_diagsums - print sum of 2 digona
+ * @a:int
+ * @size:int size
+ * Return:void
  */
-void print_chessboard(char (*a)[8])
+void print_diagsums(int *a, int size)
 {
-	unsigned int i, m = 0;
+int i, s1 = 0, s2 = 0;
 
-	for (i = 0; i < 64; i++)
+	for (i = 0; i < size; i++)
 	{
-		if (i % 8 == 0 && i != 0)
-		{
-			m = i;
-			_putchar('\n');
-		}
-		_putchar(a[i / 8][i - m]);
+		s1 += a[i];
+		a += size;
 	}
-	_putchar('\n');
+
+	a -= size;
+
+	for (i = 0; i < size; i++)
+	{
+		s2 += a[i];
+		a -= size;
+	}
+
+	printf("%d, %d\n", s1, s2);
 }
